@@ -11,12 +11,12 @@
     src: "{{ item }}"
     dest: "{{ dst_folder }}"
     mode: 0555
-  with_fileglob: "{{ src_folder }}/*.html"
+  with_fileglob: "/*.html"
   notify: Restart nginx
 
 - name: Generating index.html
   template:
-    src: "{{src_folder}}/index.j2"
+    src: "index.j2"
     dest: "{{dst_folder}}/index.html"
     mode: 0555
   notify: Restart nginx
