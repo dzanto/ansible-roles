@@ -1,0 +1,7 @@
+---
+- name: Setup nginx
+  hosts: all
+  become: yes
+
+  roles:
+    - deploy_nginx

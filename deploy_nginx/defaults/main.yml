@@ -1,2 +1,3 @@
 ---
 # defaults file for deploy_nginx
+dst_folder: /var/www/html
