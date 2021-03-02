@@ -35,6 +35,8 @@
       <h1>New html</h1>
       </body>
       </html>
+  #Запускать только единожды для первого сервера в списке inventory
+  run_once: true
 
 - include: create-log.yml
-- include: reboot.yml
+#- include: reboot.yml
