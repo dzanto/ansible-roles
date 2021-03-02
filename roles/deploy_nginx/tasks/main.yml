@@ -20,3 +20,18 @@
     dest: "{{dst_folder}}/index.html"
     mode: 0555
   notify: Restart nginx
+
+- name: Crete txt file
+  copy:
+    dest: "{{dst_folder}}/text.html"
+    content: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title>New</title>
+      </head>
+      <body>
+      <h1>New html</h1>
+      </body>
+      </html>
