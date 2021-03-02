@@ -9,7 +9,7 @@
   shell: echo Hello world!
   register: result
 #  failed_when: result.rc == 0
-  failed_when: "'World' in results.stdout"
+  failed_when: "'World' in result.stdout"
 
 - debug:
     var: result
