@@ -1,8 +1,6 @@
 ---
 - name: Ignore error
-  apt:
-    name: treeee
-    state: latest
+  apt: name=treeee state=latest
   ignore_erros: yes
 
 - name: Failed when
