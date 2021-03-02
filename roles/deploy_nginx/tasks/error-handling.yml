@@ -1,3 +1,4 @@
+---
 - name: Ignore error
   apt:
     name: treeee
