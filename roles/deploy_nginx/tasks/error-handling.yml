@@ -1,0 +1,17 @@
+- name: Ignore error
+  apt:
+    name: treeee
+    state: latest
+  ignore_erros: yes
+
+- name: Failed when
+  shell: echo Hello world!
+  register: result
+#  failed_when: result.rc == 0
+  failed_when: "'World' in results.stdout"
+
+- debug:
+    var: result
+
+- name: Task 3
+  shell: echo Hello from task 3

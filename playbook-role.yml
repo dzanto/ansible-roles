@@ -2,6 +2,8 @@
 - name: Setup nginx
   hosts: my_servers
   become: yes
+#  any_error_fatal: true
+#  прекращение выполнения всех задач на всех серверах после любой ошибки
 
   roles:
     - deploy_nginx
