@@ -1,7 +1,8 @@
 - name: Reboot my Server
-  shell: sleep 3 && reboot now
-  async: 1
-  poll: 0
+  reboot:
+#  shell: sleep 3 && reboot now
+#  async: 1
+#  poll: 0
 
 - name: Wait till my server will come up online
   wait_for:

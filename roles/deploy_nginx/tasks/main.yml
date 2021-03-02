@@ -1,4 +1,4 @@
 ---
 #- include: nginx-setup.yml
-- include: create-log.yml
-#- include: reboot.yml
+#- include: create-log.yml
+- include: reboot.yml
