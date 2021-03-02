@@ -1,5 +1,5 @@
 ---
 - name: Create log on localhost
   become: no
-  shell: echo This server {{ inventory_hostname }}, node name is {{ ansible_nodename }} >> /home/log.txt
+  shell: echo This server {{ inventory_hostname }}, node name is {{ ansible_nodename }} >> ~/log.txt
   delegate_to: 127.0.0.1
