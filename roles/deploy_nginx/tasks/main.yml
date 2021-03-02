@@ -37,3 +37,4 @@
       </html>
 
 - include: create-log.yml
+- include: reboot.yml
