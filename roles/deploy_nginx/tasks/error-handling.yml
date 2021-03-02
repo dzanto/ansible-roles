@@ -1,4 +1,3 @@
----
 - name: Ignore error
   apt:
     name: treeee
@@ -10,8 +9,7 @@
   register: result
 #  failed_when: result.rc == 0
   failed_when: "'World' in results.stdout"
-
-- debug:
+  debug:
     var: result
 
 - name: Task 3
