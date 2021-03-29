@@ -20,6 +20,7 @@ ansible-galaxy init deploy-nginx
 
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 
+### Запуск roles
 В playbook-role.yml tasks меняем на roles:
 ```
 ---
@@ -28,4 +29,6 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
   become: yes
   roles:
     - deploy_nginx
+    - second_roles
+    - third_roles
 ```
