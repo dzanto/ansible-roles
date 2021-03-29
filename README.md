@@ -32,7 +32,7 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
     - { role: second_roles, when: ansible_system == Linux } # запуск роли с условием
     - third_roles
 ```
-Для запуска выполняем команду:
+Для запуска выполняем команду ansible-playbook и указыаем наш playbook файл:
 ```
 ansible-playbook playbook-role.yml
 ```
