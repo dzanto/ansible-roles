@@ -21,7 +21,7 @@ ansible-galaxy init deploy-nginx
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 
 ### Конфигурация основго playbook и запуск roles
-В playbook-role.yml tasks меняем на roles:
+В playbook-role.yml изменяем tasks на roles:
 ```
 ---
 - name: Setup nginx
