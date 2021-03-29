@@ -1,38 +1,20 @@
-Role Name
-=========
+### Создание roles
+Для создания roles необходимо в проекте создать папку с названием roles и перейти в нее
+```
+mkdir roles; cd roles
+```
+Выполнить команду инициализации role указав имя(например deploy-nginx):
+```
+ansible-galaxy init deploy-nginx
+```
+при инциализации создастся структура пустых файлов main.yml и каталогов:
+- tasks - главный список задач выполняемых ролью
+- handlers - обработчики указанные в задачах
+- defaults - дефолтные переменные для роли
+- vars - остальные переменные для роли
+- files - файлы предназначенные для деплоя ролью
+- templates - шаблоны предназначенные для деплоя ролью
+- meta - метаданные
+- tests
 
-A brief description of the role goes here.
-
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
