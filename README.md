@@ -29,6 +29,6 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
   become: yes
   roles:
     - deploy_nginx
-    - second_roles
+    - { role: second_roles, when: ansible_system == Linux } # запуск роли с условием
     - third_roles
 ```
