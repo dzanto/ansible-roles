@@ -17,3 +17,4 @@ ansible-galaxy init deploy-nginx
 - templates - шаблоны предназначенные для деплоя ролью
 - meta - метаданные
 - tests
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
